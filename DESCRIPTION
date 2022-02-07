@@ -1,12 +1,25 @@
 Package: microclimfParallel
-Title: What the Package Does (One Line, Title Case)
+Title: Run Microclimf in Parallel
 Version: 0.0.0.9000
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+    person("Lydia", "Soifer", , "lysoifer@gmail.com", role = c("aut", "cre"))
+Description: Packages all functions required to prep files for microclimf and 
+    run microclimf in parallel.
+License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.2
+Imports: 
+    doParallel,
+    foreach,
+    iterators,
+    microclimf (>= 0.1.0),
+    microctools (>= 0.1.0),
+    parallel,
+    raster,
+    Rcpp,
+    terra
+Remotes: 
+    ilyamaclean/microCtools,
+    gitlab::ilyamaclean/microctools,
+    gitlab::ilyamaclean/microclimf
