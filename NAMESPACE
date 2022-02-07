@@ -2,6 +2,7 @@
 
 export(microout_to_raster)
 export(run_microclimf_parallel)
+export(run_microclimf_parallel_update)
 export(seasonalRast_to_dailyArray)
 export(seasonalRast_to_hourlyArray)
 export(summarise_microclimf)
