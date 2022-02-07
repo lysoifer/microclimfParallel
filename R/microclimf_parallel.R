@@ -40,7 +40,8 @@ run_microclimf_parallel = function(tile_list, pai, dem, chm, habitats, soil, n_c
   doParallel::registerDoParallel(cl)   # Modify with any do*::registerDo*()
 
   # Compute estimates
-  summ_rasts = foreach (i = c(1:length(tile_list)), .packages = c("terra", "raster", "microclimf", "microctools", "microclimfParallel")) %dopar% {
+  summ_rasts = foreach (i = c(1:length(tile_list)), .packages = c("terra", "raster", "microclimf", "microctools", "microclimfParallel"),
+                        .export = c('tile_list', 'pai', 'dem', 'chm', 'habitats', 'soil', 'pai_seasonal', 'paia_seasonal', 'folden_seasonal', 'weather', 'precip', 'll', 'reqhgt', 'epsg', 'n_years')) %dopar% {
     tile = tile_list[[i]]
     raster::values(tile) = 1
 

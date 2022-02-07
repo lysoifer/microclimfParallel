@@ -25,4 +25,4 @@ Remotes:
 URL: https://github.com/lysoifer/microclimfParallel
 BugReports: https://github.com/lysoifer/microclimfParallel/issues
 LinkingTo: 
-    Rcpp
+    Rcpp, terra, raster
