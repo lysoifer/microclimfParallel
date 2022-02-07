@@ -24,3 +24,5 @@ Remotes:
     github::ilyamaclean/microclimf
 URL: https://github.com/lysoifer/microclimfParallel
 BugReports: https://github.com/lysoifer/microclimfParallel/issues
+LinkingTo: 
+    Rcpp
