@@ -23,3 +23,5 @@ Remotes:
     ilyamaclean/microCtools,
     gitlab::ilyamaclean/microctools,
     gitlab::ilyamaclean/microclimf
+URL: https://github.com/lysoifer/microclimfParallel
+BugReports: https://github.com/lysoifer/microclimfParallel/issues
